@@ -1,0 +1,221 @@
+/* Achievement.css */
+
+/* Styles for the entire Achievement section */
+.achievement-section {
+    background-color: black;
+    padding: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+  }
+  
+  /* Certifications grid */
+  .certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Individual certificate box */
+  .certificate-box {
+    width: calc(33.33% - 10px); /* Set width for 3 boxes in a row, considering gap */
+    margin-top: 30px;
+    margin-bottom: 20px; /* Adjust margin between rows */
+    /* Add other styles for each certificate box as needed */
+  }
+  
+  /* Certificate image */
+  .certificate-image {
+    width: 100%; /* Adjust image width */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 30px yellow; /* Add shadow effect */
+  }
+
+  /* ********************************************* */
+  .certifications5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Individual certificate box */
+  .certificate-box5 {
+    width: calc(33.33% - 1px); /* Set width for 3 boxes in a row, considering gap */
+    margin-top: 20px;
+    margin-bottom: 0px; /* Adjust margin between rows */
+    /* Add other styles for each certificate box as needed */
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  /* Certificate image */
+  .certificate-image5 {
+    width: 25%; /* Adjust image width */
+    height: 80%; /* Maintain aspect ratio */
+    overflow: hidden; 
+    transition: transform 0.3s ease; /* Adding a transition for a smooth animation */
+  }
+
+  .certificate-image5:hover {
+    transform: scale(1.1); /* Increasing the scale on hover */
+  }
+
+  /* ********************************************* */
+  .certificate-image2 {
+    width: 100%; /* Adjust image width */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 30px greenyellow; /* Add shadow effect */
+  }
+
+  .certifications1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Individual certificate box */
+  .certificate-box1 {
+    width: calc(33.33% - 10px); /* Set width for 3 boxes in a row, considering gap */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjust margin between rows */
+    /* Add other styles for each certificate box as needed */
+  }
+  
+  /* Certificate image */
+  .certificate-image1 {
+    width: 100%; /* Adjust image width */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 30px red; /* Add shadow effect */
+  }
+
+  
+  /* Media queries for responsiveness */
+  /* For laptop and larger screens */
+  @media (max-width: 1200px) {
+    .certificate-box {
+      width: calc(50% - 10px); /* Set width for 2 boxes in a row, considering gap */
+    }
+    .certificate-box1 {
+        width: calc(50% - 10px); /* Set width for 2 boxes in a row, considering gap */
+      }
+  }
+  
+  /* For tablet and larger screens */
+  @media (max-width: 768px) {
+    .certificate-box {
+      width: calc(50% - 10px); /* Set width for 2 boxes in a row, considering gap */
+    }
+    .certificate-box1 {
+        width: calc(50% - 10px); /* Set width for 2 boxes in a row, considering gap */
+      }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .certificate-box {
+      width: 100%; /* Set width for a single box in a column */
+    }
+    .certificate-box1 {
+        width: 100%; /* Set width for a single box in a column */
+      }
+  }
+
+  .learn-more-button {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #915eff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #7e47ff;
+  }
+
+  .attractive-box {
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: bisque; /* Change this color to your preference */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  }
+  
+  .box-content {
+    color: black;
+    text-align: center;
+  }
+  
+  .attractive-box ul {
+    padding: 0;
+    margin-left: 10px;
+    list-style-type: square; /* Apply the list-style-type property here */
+  }
+  
+  li {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+/* Centering the image */
+.extraImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust as needed */
+}
+
+/* Styling for the image container */
+.imageDiv {
+  text-align: center;
+}
+
+/* Styling for the image */
+.pic {
+  max-width: 50%; /* Adjust the max-width as needed */
+  max-height: 100%; /* Adjust the max-height as needed */
+  margin-left: 20%;
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s ease; /* Adding a transition for a smooth animation */
+}
+
+/* Animation on hover */
+.pic:hover {
+  transform: scale(1.1); /* Increasing the scale on hover */
+}
+
+@media (max-width: 480px) {
+  .extraImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as needed */
+  }
+
+  .pic {
+    max-width: 80%; /* Adjust the max-width as needed */
+    max-height: 100%; /* Adjust the max-height as needed */
+    margin-left: 10%;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease; /* Adding a transition for a smooth animation */
+  }
+}

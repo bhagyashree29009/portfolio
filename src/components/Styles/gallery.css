@@ -1,0 +1,234 @@
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    padding: 0 5px;
+    background-color: black;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Hover Text Style start */
+.gallery .pics::after {
+    content: "Click me";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .gallery .pics:hover::after {
+    opacity: 1;
+  }
+/* Hover Text Style end */
+
+.gallery .pics:hover{
+    filter: opacity(.8);
+}
+
+@media (max-width: 991px){
+    .gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px){
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+/* Model Style (Image Pop up Styling)*/
+.model{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.model p {
+    position: absolute;
+    bottom: 5px; /* Adjust as needed for the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px; /* Adjust font size */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color */
+    padding: 5px 10px; /* Padding around the caption */
+    max-width: 80%; /* Limit width to avoid excessive width */
+    text-align: center; /* Center the text */
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.model p:hover {
+    border-color: #fff; /* Change border color on hover */
+}
+
+.model.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.model img{
+    width: auto;
+    max-width: 100%;
+    height: 120vh;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px){
+    .model img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        line-height: 0;
+        box-sizing: border-box;
+        padding: 20px 0 20px;
+        margin: 0 auto;
+    }
+    .model p {
+        position: absolute;
+        bottom: 1px; /* Adjust as needed for the distance from the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 15px; /* Adjust font size */
+        color: #fff; /* Text color */
+        background-color: rgba(0, 0, 0, 0.7); /* Background color */
+        padding: 5px 10px; /* Padding around the caption */
+        max-width: 80%; /* Limit width to avoid excessive width */
+        text-align: center; /* Center the text */
+        border: 2px solid transparent; /* Initially transparent border */
+        transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+}
+
+@media (max-width: 550px){
+    .model img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        line-height: 0;
+        box-sizing: border-box;
+        padding: 20px 0 20px;
+        margin: 0 auto;
+    }
+}
+
+.model.open svg{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Button Design */
+
+/* Button styles */
+.prev-btn,
+.next-btn {
+    padding: 10px 20px;
+    background-color: #915EFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #2980b9;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* To center-align the buttons */
+}
+
+.prev-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 480px){
+    .prev-btn {
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .next-btn {
+        position: absolute;
+        right: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .prev-btn,
+.next-btn {
+    padding: 3px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+}

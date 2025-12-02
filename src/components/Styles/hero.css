@@ -1,0 +1,35 @@
+.resume-button {
+  padding: 10px 15px;
+  margin-right: 30px;
+  background: linear-gradient(to left, #915EFF 80%, transparent 100%);
+  color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  background-size: 200% 100%;
+  font-weight: bold; /* Adding bold font weight */
+}
+
+.resume-button:hover {
+  background-position: -100% 0;
+}
+
+.citbutton {
+  padding: 5px 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: linear-gradient(to left, red 80%, transparent 100%);
+  color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  background-size: 200% 100%;
+}
+
+.citbutton:hover {
+  background-position: -100% 0;
+}

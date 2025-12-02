@@ -1,0 +1,11 @@
+.youtube-video {
+    margin-left: 15%; 
+    border: 2px solid white; /* Adding a 2px solid white border */
+    box-sizing: border-box; 
+}
+
+@media (max-width: 480px){
+    .youtube-video {
+        border: none;
+    }
+}
