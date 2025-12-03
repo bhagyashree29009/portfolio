@@ -235,7 +235,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/bhagyashree29009/portfolio-bhagyashree",
+    source_code_link: "https://github.com/bhagyashree29009/portfolio",
   },
 ];
 
