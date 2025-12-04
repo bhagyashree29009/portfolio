@@ -11,8 +11,18 @@ const Tech = () => {
     <>
       <div className="flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+          <div
+            key={technology.name}
+            className="w-28 h-28 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-lg flex flex-col items-center justify-center cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src={technology.icon}
+              alt={technology.name}
+              className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 hover:scale-110 hover:rotate-6"
+            />
+            <p className="text-white text-sm font-medium mt-2">
+              {technology.name}
+            </p>
           </div>
         ))}
 
@@ -25,19 +35,24 @@ const Tech = () => {
             />
             <div className="text-center sm:text-left mt-3 mb-6">
               <h2 className="text-lg sm:text-xl text-gray-700 font-bold mb-1 mt-4">
-                Vasp Technologies 
+                Vasp Technologies
               </h2>
               <h2 className="text-lg sm:text-xl text-gray-700 font-bold mb-6">
-                Junior Software Devloper 
+                Junior Software Devloper
               </h2>
               <p className="text-sm sm:text-base text-gray-600 mb-1">
-                FullStack Web Developement | React | Laravel(php) | MERN | JavaScript | HTML5 | CSS3 | C/C++ |
+                FullStack Web Developement | React | Laravel(php) | MERN |
+                JavaScript | HTML5 | CSS3 | C/C++ |
               </p>
               {/* <p className="text-sm sm:text-base text-gray-600 mb-1">Member @Astrophysics Club | Member @Entrepreneurship-Cell</p>
       <p className="text-sm sm:text-base text-gray-600 mb-1">Placement Co-ordinator & Web Lead for the Placement season 2023-24</p>
       <p className="text-sm sm:text-base text-gray-600 mb-1">Member of Y20 Summit organizing committee</p>
       <p className="text-sm sm:text-base text-gray-600 mb-1">Member of Techcracy'22(Technical Fest) events committee</p> */}
-              <a href="https://www.vasptechnologies.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.vasptechnologies.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="citbutton">Visit Vasp Technologies</button>
               </a>
             </div>
