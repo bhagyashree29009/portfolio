@@ -99,6 +99,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Write your name"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -110,6 +111,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Write your Email"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -121,6 +123,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Write your message"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
 
